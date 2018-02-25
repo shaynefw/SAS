@@ -62,7 +62,7 @@ div {
 nav {
   background-color: maroon;
 }
-li {
+ul .desktop-menu {
   display: inline-block;
   padding: 1em 2em;
 }
@@ -74,6 +74,9 @@ li:hover {
 a {
   text-decoration: none;
   color: white;
+}
+#menu {
+  display: none;
 }
 
 /* Product Section */
@@ -132,4 +135,23 @@ a {
   background-color: black;
   margin-top: 3em;
   padding: 5em 0em;
+}
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 63em;
+    margin: 0 auto;
+  }
+  ul .desktop-menu {
+    display: none;
+  }
+  ul {
+    text-align: center;
+  }
+  #menu {
+    display: inline-block;
+    padding: 1em 2em;
+  }
 }
