@@ -1,3 +1,6 @@
+
+/* Genesis */
+
 body {
   color: white;
   font-family: helvetica;
@@ -37,9 +40,6 @@ div {
   background-size: cover;
   height: 25em;
 }
-.mid-head .container {
-
-}
 .mh-txt {
   background-color: black;
   padding: 2em;
@@ -61,6 +61,10 @@ div {
 
 nav {
   background-color: maroon;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
 }
 ul .desktop-menu {
   display: inline-block;
@@ -103,11 +107,12 @@ a {
 }
 .glasses {
   padding-bottom: 67px;
+  padding-top: 43px;
 }
 .pimg img {
-  max-width: 8em;
+  max-width: 13em;
   background-color: white;
-  padding: 5em;
+  padding: 2em;
 }
 
 /* Location and Hours */
@@ -137,21 +142,56 @@ a {
   padding: 5em 0em;
 }
 
-/* Responsive CSS */
+/* Responsive for Tablets */
 
 @media only screen and (max-width: 1024px) {
-  .container {
-    max-width: 63em;
-    margin: 0 auto;
-  }
+
+  /* Genesis */
+
+  /* Navigation */
+
   ul .desktop-menu {
     display: none;
   }
   ul {
-    text-align: center;
+    justify-content: center;
   }
   #menu {
     display: inline-block;
     padding: 1em 2em;
+  }
+
+  /* Product Section */
+
+  .pimg img {
+    max-width: 9em;
+  }
+  #glasses {
+    display: none;
+  }
+  .product {
+    width: 47%
+  }
+
+  /* Location Section */
+
+  .location, .hours {
+    width: 14em;
+  }
+  .location div, .hours div {
+    padding-right: 13em;
+  }
+}
+
+/* Responsive for small devices */
+
+@media only screen and (max-width: 470px) {
+
+  /* Genesis */
+
+  /* Mid Header */
+
+  .mh-txt {
+
   }
 }
