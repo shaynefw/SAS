@@ -191,9 +191,50 @@ a {
 
   /* Genesis */
 
+  /* Top header */
+
+  .top-head .container {
+    justify-content: center;
+  }
+  .top-head span {
+    display: none;
+  }
+
   /* Mid Header */
 
   .mh-txt {
+    top: 236px;
+    width: auto;
+  }
+  .mh-txt h1 {
+    font-size: 30px;
+  }
 
+  /* Product Section */
+
+  #watch {
+    display: none;
+  }
+  .products {
+    justify-content: center;
+  }
+  .product {
+    width: auto;
+  }
+
+  /* Location Section */
+
+  .loc-hrs {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 357px) {
+  .mh-txt {
+    top: 241px;
+  }
+  .mh-txt h1 {
+    font-size: 27px
   }
 }
