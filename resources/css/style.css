@@ -231,10 +231,15 @@ a {
 }
 
 @media only screen and (max-width: 357px) {
+
+  /* Genesis */
+
+  /* Mid Header */
+
   .mh-txt {
-    top: 241px;
+    top: 251px;
   }
   .mh-txt h1 {
-    font-size: 27px
+    font-size: 22px;
   }
 }
